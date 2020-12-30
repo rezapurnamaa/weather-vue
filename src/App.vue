@@ -41,7 +41,7 @@ export default {
       try {
         const response = await fetch(`${this.url_base}weather?q=${query}&units=metric&appid=${this.api_key}`)
         const data = await response.json()
-        console.log(data)
+        console.log("fetch weather for " + data.name)
         this.setResults(data)
       } catch (error) {
         console.error(error)
