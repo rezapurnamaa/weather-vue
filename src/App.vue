@@ -11,7 +11,7 @@
         </div>
 
         <div class="weather-box">
-          <div class="temp">{{weather.main.temp}}°C</div>
+          <div class="temp">{{Number.parseInt(weather.main.temp)}}°C</div>
           <div class="weather">{{weather.weather[0].main}}</div>
         </div>
       </div>
